@@ -804,6 +804,138 @@ export const indianFoodDatabase = [
     fat: 12,
     fiber: 5,
     region: "Kashmir"
+  },
+
+  // Odisha Dishes
+  {
+    id: 61,
+    name: "Pakhala Bhata",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "200g",
+    calories: 165,
+    protein: 3,
+    carbs: 36,
+    fat: 0.5,
+    fiber: 2,
+    region: "Odisha"
+  },
+  {
+    id: 62,
+    name: "Dalma",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "150g",
+    calories: 185,
+    protein: 9,
+    carbs: 28,
+    fat: 4,
+    fiber: 7,
+    region: "Odisha"
+  },
+  {
+    id: 63,
+    name: "Machha Jhola",
+    category: "Odia",
+    type: "Non-Veg",
+    servingSize: "200g",
+    calories: 245,
+    protein: 24,
+    carbs: 8,
+    fat: 14,
+    fiber: 2,
+    region: "Odisha"
+  },
+  {
+    id: 64,
+    name: "Chhena Poda",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "100g",
+    calories: 285,
+    protein: 12,
+    carbs: 32,
+    fat: 12,
+    fiber: 1,
+    region: "Odisha"
+  },
+  {
+    id: 65,
+    name: "Santula",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "150g",
+    calories: 125,
+    protein: 4,
+    carbs: 18,
+    fat: 5,
+    fiber: 6,
+    region: "Odisha"
+  },
+  {
+    id: 66,
+    name: "Kheer Sagara",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "150g",
+    calories: 245,
+    protein: 6,
+    carbs: 35,
+    fat: 9,
+    fiber: 0,
+    region: "Odisha"
+  },
+  {
+    id: 67,
+    name: "Rasabali",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "2 pieces (100g)",
+    calories: 295,
+    protein: 8,
+    carbs: 42,
+    fat: 11,
+    fiber: 1,
+    region: "Odisha"
+  },
+  {
+    id: 68,
+    name: "Chakuli Pitha",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "2 pieces (80g)",
+    calories: 165,
+    protein: 4,
+    carbs: 32,
+    fat: 2,
+    fiber: 3,
+    region: "Odisha"
+  },
+  {
+    id: 69,
+    name: "Chingudi Jhola",
+    category: "Odia",
+    type: "Non-Veg",
+    servingSize: "200g",
+    calories: 225,
+    protein: 22,
+    carbs: 6,
+    fat: 12,
+    fiber: 1,
+    region: "Odisha"
+  },
+  {
+    id: 70,
+    name: "Poda Pitha",
+    category: "Odia",
+    type: "Veg",
+    servingSize: "100g",
+    calories: 245,
+    protein: 5,
+    carbs: 42,
+    fat: 6,
+    fiber: 2,
+    region: "Odisha"
   }
 ];
 

@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-Indian Calorie Tracker is a React-based web application for tracking caloric intake specifically designed for Indian cuisine. The app features a comprehensive database of 60+ Indian dishes from various regional cuisines, smart search functionality, daily meal tracking, and analytics dashboard with interactive charts.
+Indian Calorie Tracker is a React-based web application for tracking caloric intake specifically designed for Indian cuisine. The app features a comprehensive database of 70+ Indian dishes from various regional cuisines, smart search functionality, daily meal tracking, and analytics dashboard with interactive charts.
 
 ## Development Commands
 
@@ -52,7 +52,7 @@ npm test -- --coverage --watchAll=false
 
 ### Data Management
 - **localStorage**: All meal data persists locally using browser storage
-- **indianFood.js**: Central food database with 60+ dishes containing nutritional information
+- **indianFood.js**: Central food database with 70+ dishes containing nutritional information
 - **State management**: React hooks (useState, useEffect) with prop drilling for component communication
 
 ### Key Data Structures
@@ -84,9 +84,9 @@ npm test -- --coverage --watchAll=false
 ```
 
 ### Food Database Categories
-- **Regional**: North Indian, South Indian, Bengali, Gujarati, Rajasthani, Kashmiri
+- **Regional**: North Indian, South Indian, Bengali, Gujarati, Rajasthani, Kashmiri, Odia
 - **Meal Types**: Rice, Bread, Breakfast, Snacks, Desserts, Beverages
-- **Geographic Coverage**: Punjab, Tamil Nadu, Kerala, Gujarat, West Bengal, Maharashtra, Rajasthan, Kashmir
+- **Geographic Coverage**: Punjab, Tamil Nadu, Kerala, Gujarat, West Bengal, Maharashtra, Rajasthan, Kashmir, Odisha
 
 ## Technical Stack
 

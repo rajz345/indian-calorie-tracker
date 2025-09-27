@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Search, Plus } from 'lucide-react';
 import { searchFood, getUniqueCategories, getUniqueRegions } from '../data/indianFood';
 
@@ -8,6 +8,7 @@ const FoodSearch = ({ onFoodSelect }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const searchRef = useRef(null);
 
   const categories = getUniqueCategories();
   const regions = getUniqueRegions();
@@ -22,6 +23,28 @@ const FoodSearch = ({ onFoodSelect }) => {
       setShowSuggestions(false);
     }
   }, [query]);
+
+  // Also update suggestions when filters change
+  useEffect(() => {
+    if (query.length > 1) {
+      const results = searchFood(query).slice(0, 8);
+      setSuggestions(results);
+    }
+  }, [selectedCategory, selectedRegion, query]);
+
+  // Handle click outside to close suggestions
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowSuggestions(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleFoodSelect = (food) => {
     onFoodSelect(food);
@@ -64,7 +87,7 @@ const FoodSearch = ({ onFoodSelect }) => {
         </div>
       </div>
 
-      <div className="search-container">
+      <div className="search-container" ref={searchRef}>
         <div className="search-input-wrapper">
           <Search className="search-icon" size={20} />
           <input
