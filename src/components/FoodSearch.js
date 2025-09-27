@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, Plus } from 'lucide-react';
+import { Search, Plus, ChefHat } from 'lucide-react';
 import { searchFood, getUniqueCategories, getUniqueRegions } from '../data/indianFood';
 
-const FoodSearch = ({ onFoodSelect }) => {
+const FoodSearch = ({ onFoodSelect, onCustomDishClick }) => {
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');

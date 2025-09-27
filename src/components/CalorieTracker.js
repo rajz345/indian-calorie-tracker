@@ -126,10 +126,11 @@ const CalorieTracker = ({ selectedDate, meals, onAddMeal, onRemoveMeal, onUpdate
                           <div className="edit-quantity">
                             <input
                               type="number"
-                              min="0.1"
-                              step="0.1"
+                              min="1"
+                              max="100"
+                              step="1"
                               value={editQuantity}
-                              onChange={(e) => setEditQuantity(parseFloat(e.target.value) || 1)}
+                              onChange={(e) => setEditQuantity(Math.min(100, Math.max(1, parseInt(e.target.value) || 1)))}
                               className="quantity-input"
                             />
                             <button

@@ -90,24 +90,26 @@ const AddMealModal = ({ isOpen, onClose, selectedFood, onAddMeal }) => {
               <button
                 type="button"
                 className="quantity-btn"
-                onClick={() => setQuantity(Math.max(0.1, quantity - 0.1))}
-                disabled={quantity <= 0.1}
+                onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                disabled={quantity <= 1}
               >
                 -
               </button>
               <input
                 id="quantity"
                 type="number"
-                min="0.1"
-                step="0.1"
+                min="1"
+                max="100"
+                step="1"
                 value={quantity}
-                onChange={(e) => setQuantity(parseFloat(e.target.value) || 1)}
+                onChange={(e) => setQuantity(Math.min(100, Math.max(1, parseInt(e.target.value) || 1)))}
                 className="quantity-input"
               />
               <button
                 type="button"
                 className="quantity-btn"
-                onClick={() => setQuantity(quantity + 0.1)}
+                onClick={() => setQuantity(Math.min(100, quantity + 1))}
+                disabled={quantity >= 100}
               >
                 +
               </button>
