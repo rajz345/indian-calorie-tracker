@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/indian-calorie-tracker/static/css/main.6b0ed453.css",
+    "main.js": "/indian-calorie-tracker/static/js/main.4374df5b.js",
+    "static/js/453.5dcfea85.chunk.js": "/indian-calorie-tracker/static/js/453.5dcfea85.chunk.js",
+    "index.html": "/indian-calorie-tracker/index.html",
+    "main.6b0ed453.css.map": "/indian-calorie-tracker/static/css/main.6b0ed453.css.map",
+    "main.4374df5b.js.map": "/indian-calorie-tracker/static/js/main.4374df5b.js.map",
+    "453.5dcfea85.chunk.js.map": "/indian-calorie-tracker/static/js/453.5dcfea85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b0ed453.css",
+    "static/js/main.4374df5b.js"
+  ]
+}
